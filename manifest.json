@@ -1,0 +1,14 @@
+{
+  "name": "Always Smile",
+  "description": "Redirect www.amazon.* to smile.amazon.*",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "webRequest",
+    "*://www.amazon.com/*",
+    "webRequestBlocking"
+  ]
+}
